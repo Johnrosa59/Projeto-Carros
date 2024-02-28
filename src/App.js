@@ -37,7 +37,12 @@ export default function App() {
     { model: "BMW", manufacturedSince: "2008", color: "Cinza", price: 17000 },
     { model: "Hillux", manufacturedSince: "2000", color: "Cinza", price: 17000 },
     { model: "Opala", manufacturedSince: "1978", color: "Cinza", price: 17000 },
-
+    { model: "Camaro", manufacturedSince: "2008", color: "Vermelho", price: 16000 },
+    { model: "D10", manufacturedSince: "2008", color: "Cinza", price: 16000 },
+    { model: "Brasilia", manufacturedSince: "2008", color: "Vermelho", price: 2000 },
+    { model: "Buggy", manufacturedSince: "2008", color: "Cinza", price: 2000 },
+    { model: "Hayabusa", manufacturedSince: "2000", color: "Cinza", price: 2000 },
+    { model: "CG 150", manufacturedSince: "2000", color: "Preto", price: 2000 },
 
   ]
 
@@ -361,15 +366,89 @@ export default function App() {
     return false
   })
 
-  const filteredCarsManu2000ColorGrayPrice16 = cars.filter(car => {
-    if (car.manufacturedSince === "2000" && car.color === "Cinza" && car.price === 16000) {
+  const filteredCarsManu1978ColorBlackPrice16 = cars.filter(car => {
+    if (car.manufacturedSince === "1978" && car.color === "Preto" && car.price === 16000) {
       return car
     }
     return false
   })
 
+  const filteredCarsManu1978ColorRedPrice16 = cars.filter(car => {
+    if (car.manufacturedSince === "1978" && car.color === "Vermelho" && car.price === 16000) {
+      return car
+    }
+    return false
+  })
 
+  const filteredCarsManu1978ColorGrayPrice16 = cars.filter(car => {
+    if (car.manufacturedSince === "1978" && car.color === "Cinza" && car.price === 16000) {
+      return car
+    }
+    return false
+  })
 
+  const filteredCarsManu2008ColorBlackPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "2008" && car.color === "Preto" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu2008ColorRedPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "2008" && car.color === "Vermelho" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu2008ColorGrayPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "2008" && car.color === "Cinza" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu2000ColorBlackPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "2000" && car.color === "Preto" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu2000ColorRedPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "2000" && car.color === "Vermelho" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu2000ColorGrayPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "2000" && car.color === "Cinza" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu1978ColorBlackPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "1978" && car.color === "Preto" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu1978ColorRedPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "1978" && car.color === "Vermelho" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
+
+  const filteredCarsManu1978ColorGrayPrice20 = cars.filter(car => {
+    if (car.manufacturedSince === "1978" && car.color === "Cinza" && car.price === 2000) {
+      return car
+    }
+    return false
+  })
 
 
 
@@ -752,8 +831,121 @@ export default function App() {
           <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
         ))}
       </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "2008" && optionColor === "Preto") {
+      return <div>
+        {filteredCarsManu2008ColorBlackPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "2008" && optionColor === "Vermelho") {
+      return <div>
+        {filteredCarsManu2008ColorRedPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "2008" && optionColor === "Cinza") {
+      return <div>
+        {filteredCarsManu2008ColorGrayPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "2000" && optionColor === "Preto") {
+      return <div>
+        {filteredCarsManu2000ColorBlackPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "2000" && optionColor === "Vermelho") {
+      return <div>
+        {filteredCarsManu2000ColorRedPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "2000" && optionColor === "Cinza") {
+      return <div>
+        {filteredCarsManu2000ColorGrayPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "1978" && optionColor === "Preto") {
+      return <div>
+        {filteredCarsManu1978ColorBlackPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "1978" && optionColor === "Vermelho") {
+      return <div>
+        {filteredCarsManu1978ColorRedPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "16000" && optionManufacturedSince === "1978" && optionColor === "Cinza") {
+      return <div>
+        {filteredCarsManu1978ColorGrayPrice16.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "2008" && optionColor === "Preto") {
+      return <div>
+        {filteredCarsManu2008ColorBlackPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "2008" && optionColor === "Vermelho") {
+      return <div>
+        {filteredCarsManu2008ColorRedPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "2008" && optionColor === "Cinza") {
+      return <div>
+        {filteredCarsManu2008ColorGrayPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "2000" && optionColor === "Preto") {
+      return <div>
+        {filteredCarsManu2000ColorBlackPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "2000" && optionColor === "Vermelho") {
+      return <div>
+        {filteredCarsManu2000ColorRedPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "2000" && optionColor === "Cinza") {
+      return <div>
+        {filteredCarsManu2000ColorGrayPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "2000" && optionColor === "Vermelho") {
+      return <div>
+        {filteredCarsManu2000ColorRedPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "1978" && optionColor === "Preto") {
+      return <div>
+        {filteredCarsManu1978ColorBlackPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "1978" && optionColor === "Vermelho") {
+      return <div>
+        {filteredCarsManu1978ColorRedPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
+    } else if (optionPrice === "2000" && optionManufacturedSince === "1978" && optionColor === "Cinza") {
+      return <div>
+        {filteredCarsManu1978ColorGrayPrice20.map((car, index) => (
+          <p key={index}>Modelo: {car.model}, Ano de fabricação: {car.manufacturedSince}, Cor: {car.color}, Preço: {car.price}</p>
+        ))}
+      </div>
     }
-
 
 
   }
